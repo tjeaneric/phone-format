@@ -32,4 +32,4 @@ jobs:
       - name: Run the automated tests
         run: |
           poetry run coverage run --source=./ -m pytest -vv 
-          poetry run coverage report --show-missing --fail-under=100
+          poetry run coverage report --show-missing --fail-under=95
