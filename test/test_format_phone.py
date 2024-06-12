@@ -1,4 +1,4 @@
-from phone_format.format_phone import FormatPhone, RwandaPhoneFormat, UgandaPhoneFormat
+from phone_format.format_phone import RwandaPhoneFormat, UgandaPhoneFormat
 
 
 class TestRwandaPhoneFormat(RwandaPhoneFormat):
