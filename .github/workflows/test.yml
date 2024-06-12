@@ -30,4 +30,6 @@ jobs:
       - name: Install the project test dependencies
         run: poetry install --no-root --only test
       - name: Run the automated tests
-        run: poetry run coverage run --source=./ -m pytest -vv && coverage report --show-missing --fail-under=100
+        run: |
+          poetry run coverage run --source=./ -m pytest -vv 
+          poetry run coverage report --show-missing --fail-under=100
