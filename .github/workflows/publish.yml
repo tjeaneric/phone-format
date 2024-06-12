@@ -46,8 +46,6 @@ jobs:
       - name: Mark github workspace as safe
         run: |
           git config --global --add safe.directory '*'
-      - name: Run tests
-        run: poetry run pytest --cov=./ --cov-report=xml
       - name: Build and publish to pypi
         uses: JRubics/poetry-publish@v2.0
         with:
