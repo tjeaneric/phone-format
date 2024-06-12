@@ -4,14 +4,17 @@ phone-format is a Python library for dealing with formatting phone numbers.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) or [poetry](https://python-poetry.org/) to install rwandaphoneformat.
+Use the package manager [pip](https://pip.pypa.io/en/stable/)
+or [poetry](https://python-poetry.org/) to install rwandaphoneformat.
 
 ```bash
-pip install phone-format
+pip install phone_format
 ```
-or 
+
+or
+
 ```bash
-poetry add phone-format
+poetry add phone_format
 ```
 
 ## Usage
@@ -35,7 +38,6 @@ in_250_format('250780000000')
 # if the input is not formatted as a Rwandan phone
 in_250_format('1')
 ```
-
 
 ## Contributing
 
