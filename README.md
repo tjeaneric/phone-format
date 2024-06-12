@@ -20,23 +20,23 @@ poetry add phone_format
 ## Usage
 
 ```python
-from rwandaphoneformat import in_250_format
+from phone_format.format_phone import RwandaPhoneFormat
 
 # returns '250780000000'
-in_250_format('0780000000')
+RwandaPhoneFormat.format_phone('0780000000')
 
 # returns '250780000000'
-in_250_format('+250780000000')
+RwandaPhoneFormat.format_phone('+250780000000')
 
 # returns '250780000000'
-in_250_format('780000000')
+RwandaPhoneFormat.format_phone('780000000')
 
 # returns '250780000000'
-in_250_format('250780000000')
+RwandaPhoneFormat.format_phone('250780000000')
 
 # returns '1', here it returns the input, 
 # if the input is not formatted as a Rwandan phone
-in_250_format('1')
+RwandaPhoneFormat.format_phone('1')
 ```
 
 ## Contributing
