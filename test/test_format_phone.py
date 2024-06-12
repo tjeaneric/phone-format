@@ -1,4 +1,4 @@
-from format_phone import RwandaPhoneFormat
+from phone_format.format_phone import RwandaPhoneFormat
 
 
 def test_rwanda_phone_format_start_with_078():
