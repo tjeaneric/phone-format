@@ -28,11 +28,12 @@ jobs:
           path: ./.venv
           key: venv-${{ hashFiles('poetry.lock') }}
       - name: Install the project dependencies
-        run: poetry install --only test
+        run: poetry install --no-root --only test
       - name: Run the automated tests
         run: poetry run pytest -v
 
   publish:
+    needs: test
     if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
