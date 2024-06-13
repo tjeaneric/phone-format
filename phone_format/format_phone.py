@@ -2,13 +2,15 @@ from abc import ABC, abstractmethod
 
 
 class FormatPhone(ABC):
+    @staticmethod
     @abstractmethod
-    def format_phone(self, phone_input: str):
+    def format_phone(phone_input: str):
         pass
 
 
 class RwandaPhoneFormat(FormatPhone):
-    def format_phone(self, phone_input: str):
+    @staticmethod
+    def format_phone(phone_input: str):
         """
         This function formats a phone number and returns it in a 250 format (250780000000)
         :param phone_input: string representation of a phone number, e.g. 0780000000
@@ -30,7 +32,8 @@ class RwandaPhoneFormat(FormatPhone):
 
 
 class UgandaPhoneFormat(FormatPhone):
-    def format_phone(self, phone_input: str):
+    @staticmethod
+    def format_phone(phone_input: str):
         """
         This function formats a phone number and returns it in a 256 format (256780000000)
         :param phone_input: string representation of a phone number, e.g. 0780000000
