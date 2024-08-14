@@ -29,11 +29,16 @@ class TestRwandaPhoneFormat(RwandaPhoneFormat):
 
 
 class TestUgandaPhoneFormat(UgandaPhoneFormat):
-    def test_uganda_phone_format_start_with_078(self):
+
+    def test_uganda_phone_format_start_with_076(self):
         formatted_phone = self.format_phone("6788000000")
         assert formatted_phone == "256788000000"
 
-    def test_uganda_phone_format_start_with_250(self):
+    def test_uganda_phone_format_start_with_678(self):
+        formatted_phone = self.format_phone("0761974245")
+        assert formatted_phone == "256761974245"
+
+    def test_uganda_phone_format_start_with_256(self):
         formatted_phone = self.format_phone("256788000000")
         assert formatted_phone == "256788000000"
 
