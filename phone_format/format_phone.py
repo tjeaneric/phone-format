@@ -43,7 +43,9 @@ class UgandaPhoneFormat(FormatPhone):
 
         first_three, first_two = phone_number[0:3], phone_number[0:2]
         phone_number_length = len(phone_number)
-        if phone_number_length == 9 and phone_number.startswith("7"):
+        if phone_number_length == 10 and phone_number.startswith("0"):
+            phone = f"256{phone_number[1:]}"
+        elif phone_number_length == 9 and phone_number.startswith("7"):
             phone = f"256{phone_number}"
         elif first_three == "+25":
             phone = phone_number.lstrip("+")
